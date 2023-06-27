@@ -18,7 +18,6 @@ Folder Structure
 
 
 <pre>
-
 │   .gitignore
 │   content
 │   index.js
@@ -61,5 +60,53 @@ Folder Structure
         register.ejs
         reset.ejs
         welcome.ejs
+
+
+S:\A MasterClass Series Of Web Dev\Back_End Skill Test Final\NodeJS_Authentication>tree/f
+Folder PATH listing for volume EDUCATION
+Volume serial number is 3E1A-A680
+S:.
+│   .gitignore
+│   index.js
+│   package-lock.json
+│   package.json
+│   README.md
+│
+├───assets
+│   │   cyber-security-icon.jpg
+│   │   forget.png
+│   │   reset.png
+│   │   secure-icon.jpg
+│   │   wel.png
+│   │   welcome.png
+│   │
+│   └───css
+│           bootstrap.min.css
+│
+├───config
+│       checkAuth.js
+│       key.js
+│       passport.js
+│
+├───controllers
+│       authController.js
+│
+├───models
+│       User.js
+│
+├───routes
+│       auth.js
+│       index.js
+│
+└───views
+        dash.ejs
+        forgot.ejs
+        layout.ejs
+        login.ejs
+        massages.ejs
+        register.ejs
+        reset.ejs
+        welcome.ejs
+
 
 </pre>
