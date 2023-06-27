@@ -64,13 +64,13 @@ exports.registerHandle = (req, res) => {
                 });
                 const accessToken = oauth2Client.getAccessToken()
 
-                const token = jwt.sign({ name, email, password }, JWT_KEY, { expiresIn: '30m' });
+                const token = jwt.sign({ name, email, password }, JWT_KEY, { expiresIn: '15m' });
                 const CLIENT_URL = 'http://' + req.headers.host;
 
                 const output = `
                 <h2>Please click on below link to activate your account</h2>
                 <p>${CLIENT_URL}/auth/activate/${token}</p>
-                <p><b>NOTE: </b> The above activation link expires in 30 minutes.</p>
+                <p><strong>NOTE: </strong> The Above Link will be expired within 15 minitues</p>
                 `;
 
                 const transporter = nodemailer.createTransport({
@@ -89,7 +89,7 @@ exports.registerHandle = (req, res) => {
                 const mailOptions = {
                     from: '"Auth Admin" <nodejsa@gmail.com>', // sender address
                     to: email, // list of receivers
-                    subject: "Account Verification: NodeJS Auth ✔", // Subject line
+                    subject: "Account Vwefification ", // Subject line
                     generateTextFromHTML: true,
                     html: output, // html body
                 };
